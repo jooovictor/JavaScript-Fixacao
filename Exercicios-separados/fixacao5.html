@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixação 5</title>
+</head>
+<body>
+    <script>
+        let f5base = parseFloat(prompt('Base da cozinha retangular: '));
+        let f5altura = parseFloat(prompt('Altura da cozinha retangular: '));
+        const f5piso = 2.5;
+        
+
+        let f5area = f5base * f5altura;
+        let f5caixas = f5area / f5piso;
+
+        console.log('Fixação 5. Base: ' + parseFloat(f5base) + 'm', 'Altura: ' + parseFloat(f5altura) + 'm', '\nFixação 5. Piso: ' + parseFloat(f5piso) + 'm²');
+        console.log('Fixação 5. A Área é: ' + parseFloat(f5area) + 'm²');
+        console.log('Fixação 5. O numero de caixas necessarias é: ', Math.round(parseFloat(f5caixas)));
+    </script>
+</body>
+</html>

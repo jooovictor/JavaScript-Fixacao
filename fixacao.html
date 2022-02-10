@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixação</title>
+</head>
+<body>
+    <script>
+        /* ---------- Fixação 1 -------------*/
+
+        alert("Fixação 1");
+        let f1nota1 = parseInt(prompt('Digite sua primeira nota bimestral: '));
+        let f1nota2 = parseInt(prompt('Digite sua Segunda nota bimestral: '));
+        let f1nota3 = parseInt(prompt('Digite sua Terceira nota bimestral: '));
+        let f1nota4 = parseInt(prompt('Digite sua Quarta nota bimestral: '));
+        let f1nota_final;
+        let f1media;
+
+        f1nota_final = f1nota1 + f1nota2 + f1nota3 + f1nota4;
+        f1media = f1nota_final / 4;
+
+        console.log('Fixação 1. Nota 1: ' + parseInt(f1nota1), '\nFixação 1. Nota 2: ' + parseInt(f1nota2),'\nFixação 1. Nota 3: ' + parseInt(f1nota3),'\nFixação 1. Nota 4: ' + parseInt(f1nota4));
+        console.log('Fixação 1. Nota final: ' + parseInt(f1nota_final));
+        console.log('Fixação 1. Sua média é: ' + parseFloat(f1media));
+        console.log('--------------------------------------------------------');
+        
+        /* ---------- Fixação 2 -------------*/
+
+        alert("fixação 2");
+        // let diametro = parseFloat(prompt('Qual o diametro do Circulo: ')); //               Usando o diamento                 //
+        // let raio = diametro / 2;
+        const pi = 3.14;
+        let f2raio = parseFloat(prompt('Digite o Raio de um circulo para calculo de sua área: '));
+        let f2area = pi * f2raio * f2raio;
+        console.log('Fixação 2. O raio do circulo é: ' + parseFloat(f2raio) + 'cm');
+        console.log('Fixação 2. A area do circulo é: ' + parseFloat(f2area) + 'cm²');
+        console.log('--------------------------------------------------------');
+
+        /* ---------- Fixação 3 -------------*/
+
+        alert("fixação 3");
+        let f3fahrenheit = parseFloat(prompt('Digite a temperatura em Fahrenheit: '));
+        let f3celsius = 5 * ((f3fahrenheit - 32) / 9);
+        console.log('Fixação 3. Fahrenheit: ' + parseFloat(f3fahrenheit) + '°');
+        console.log('Fixação 3. Celsius: ' + parseFloat(f3celsius) + 'º');
+        console.log('--------------------------------------------------------');
+
+        /* ---------- Fixação 4 -------------*/
+
+        alert("fixação 4");
+        let f4base = parseFloat(prompt('Base de uma sala retangular: '));
+        let f4altura = parseFloat(prompt('Altura de uma sala retangular: '));
+
+        let f4area = f4base * f4altura;
+        let f4per = 2 * (f4base + f4altura) ;
+        console.log('Fixação 4. Base: ' + parseFloat(f4base) + 'm', 'Altura: ' + parseFloat(f4altura) + 'm');
+        console.log('Fixação 4. A área da sala retangular é: ' + parseFloat(f4area) + 'm²', '\nFixação 4. O perimetro da sala retangular é: ' + parseFloat(f4per) + 'cm');
+        console.log('--------------------------------------------------------');
+
+        /* ---------- Fixação 5 -------------*/
+
+        alert("fixação 5");
+        let f5base = parseFloat(prompt('Base da cozinha retangular: '));
+        let f5altura = parseFloat(prompt('Altura da cozinha retangular: '));
+        const f5piso = 2.5;
+        
+
+        let f5area = f5base * f5altura;
+        let f5caixas = f5area / f5piso;
+
+        console.log('Fixação 5. Base: ' + parseFloat(f5base) + 'm', 'Altura: ' + parseFloat(f5altura) + 'm', '\nFixação 5. Piso: ' + parseFloat(f5piso) + 'm²');
+        console.log('Fixação 5. A Área é: ' + parseFloat(f5area) + 'm²');
+        console.log('Fixação 5. O numero de caixas necessarias é: ', Math.round(parseFloat(f5caixas)));
+        console.log('--------------------------------------------------------');
+    </script>
+</body>
+</html>
